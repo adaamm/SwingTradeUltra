@@ -4,7 +4,7 @@ SwingTradeUltra is a project that aims to be able to determine is a certain stoc
 
 The indicators I'm using have been back-tested and applied through actual stock trading, my trading stats can be shared through a Robinhood CSV file. It utilizes the CCI indicator as well as the VIX_FIX indicator.
 
-NOTE: The current version is in Beta and has incomplete features, do not use it at the moment.
+NOTE: The current version is in Beta and has incomplete features, do not fully rely on it at the moment.
 
 Future additions:
 *Better intergration with VIX_FIX formula
