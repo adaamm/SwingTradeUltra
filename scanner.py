@@ -4,6 +4,7 @@ from matplotlib import style
 import pandas as pd
 import pandas_datareader.data as web
 from pyfiglet import figlet_format
+from vix_fix import findVixFix
 
 print(figlet_format('Swing Trade Ultra'))
 
@@ -35,22 +36,29 @@ df['CCI'] = (df['TP'] - df['20sma']) / (constant * df['MD'])
 print('\n')
 currentCCI = df['CCI'].iloc[-1];
 if currentCCI <= -100:
-    print("{} is potentially being set-up for a breakout, watch for a CCI cross of [-100] for confirmation".format(ticker))
+    print("${} is potentially being set-up for a breakout, watch for a CCI cross of [-100] for confirmation".format(ticker))
 elif currentCCI > -100 and currentCCI < 0:
-    print("{} is potentially being set-up for a breakout, watch for a CCI cross of [0] for confirmation".format(ticker))
+    print("${} is potentially being set-up for a breakout, watch for a CCI cross of [0] for confirmation".format(ticker))
 elif currentCCI >= 100:
-    print("{} has high momentum but is nearing the upwards trajectory of it's cycle, watch for a cross from above [100] for confirmation of downtrend".format(ticker))
+    print("${} has high momentum but is nearing the upwards trajectory of it's cycle, watch for a cross from above [100] for confirmation of downtrend".format(ticker))
 else:
-    print("{} is not a good swing trade buy opportunity ".format(ticker))
+    print("${} is not a good swing trade buy opportunity ".format(ticker))
 
-
+currentVixFix = findVixFix(ticker)
+if currentVixFix >= 10:
+    print("Currently this stock is volatile due to market fears, increasing the risk that it will crash despite upwards momentum")
+elif currentVixFix < 10 and currentVixFix > 4:
+    print("Currently this stock is non-volatile, meaning it is likely a good time to buy")
+else:
+    print("Currently this stock is volatile due to overbuying, increasing the risk it will crash despite upwards momentum")
 #df['AdjClose'].plot()
 #FIX
 #lastDate = df['begins_at'].iloc[-1].astype(string)
 print('\nThe last recorded CCI was {}, on {}'.format(currentCCI, 'NULL'))
+print('\nThe last recorded Vix_Fix was {} on {}'.format(currentVixFix, 'NULL'))
 print('\n\n\n\n\nMarket Data provided by: {}'.format('Robinhood'))
 print('\nProgramed using Python, pandas, pandas_datareader')
 print('\nBy: Yong Chong 2018')
 print('\nDisclaimer: Not professional financial or investment advice')
-df.to_csv('CVSInfo.csv')
+
 #plt.show()
