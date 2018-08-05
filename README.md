@@ -7,7 +7,7 @@ The indicators I'm using have been back-tested and applied through actual stock 
 NOTE: The current version is in Beta and has incomplete features, do not use it at the moment.
 
 Future additions:
-*VIX_FIX formula
+*Better intergration with VIX_FIX formula
 *You can let the program know if you're looking to enter or exit a trade for a specific stock
 *Will be able to determine what stocks have weak trends (month, quarter, year) that increase risk
 *Will be able to give an index for risk to reward
@@ -16,4 +16,5 @@ Future additions:
 
 ![swingtradeultra](https://user-images.githubusercontent.com/34783474/43681929-7722a5a4-9817-11e8-9ae3-73e1d566fbcb.PNG)
 
-![swingtradeultra_2](https://user-images.githubusercontent.com/34783474/43681938-97e50ba6-9817-11e8-8ae4-840b5471eebc.PNG)
+![swingtradeultra_2](https://user-images.githubusercontent.com/34783474/43682181-d4b3aff2-9820-11e8-956f-e02faeb62a20.PNG)
+
