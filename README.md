@@ -10,3 +10,6 @@ Future additions:
 *Will be able to determine what stocks have weak trends (month, quarter, year) that increase risk
 *Will be able to give an index for risk to reward
 *More advanced GUI
+
+
+![swingtradeultra](https://user-images.githubusercontent.com/34783474/43681929-7722a5a4-9817-11e8-9ae3-73e1d566fbcb.PNG)
