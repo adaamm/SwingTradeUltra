@@ -13,3 +13,5 @@ Future additions:
 
 
 ![swingtradeultra](https://user-images.githubusercontent.com/34783474/43681929-7722a5a4-9817-11e8-9ae3-73e1d566fbcb.PNG)
+
+![swingtradeultra_2](https://user-images.githubusercontent.com/34783474/43681938-97e50ba6-9817-11e8-8ae4-840b5471eebc.PNG)
